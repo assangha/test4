@@ -1,0 +1,34 @@
+<!--
+Build a new project using Angular JS and do the following:
+
+App component:
+- Add a link in the app component that leads to rendering the login component using this routing path "/login."
+
+
+Login component:
+- Create a new component for the login form (userName, password)
+- Holds a function used to validate all the fields when the logic onSubmit event invokes the validation function when appropriate.
+- The two fields can only contain letters and numbers and must not be empty
+- Hash the password with bcrypt (bcryptjs) 
+- show the validation error message at the top of the form 
+- if the login successfully will be redirected to this path "/contactus"
+- Protect your application by using JWT, so unauthorized user can not access this path "/contactus"
+- We assume the user information who willing to use our application are:
+
+{      "userName": "bob",      "password": "myPassword"  }
+
+Contactus component:
+- Create a new component for the contact us form (name, email, message)
+- Holds a function used to validate all the fields when the logic onSubmit event invokes the validation function when appropriate.
+- All form elements can not be empty
+- show errror message the moment the user violates the validation rule at the top of the form
+
+
+Netlify:
+- Deploy the app with Netlify’s
+- write the URL to your published website and your GitHub Repository in the answer box with your scripts
+
+
+Note: The timestamp of pushing the changes from your local repository to the remote one should be during your exam time; if not, you will get a Zero
+-->
+<router-outlet></router-outlet>

@@ -1,0 +1,23 @@
+<form  #f='ngForm' (ngSubmit)='onSubmit(f)' action="/contactus" method="post">
+
+    <div class="form-group">
+      <label class="control-label" for="uname" >User Name:</label>
+      <input type="text" class="form-control" id="userName" name="userName"  ngModel required autofocus pattern="[a-zA-Z0-9]">
+    </div>
+    <div *ngIf="Error==true">
+        <strong>Warning:</strong> "User Name:" is Invalid.
+    </div>
+      
+  <br><br>
+    <div class="form-group">
+        <label class="control-label" for="password" >password:</label>
+        <input type="password" class="form-control" id="password" name="password" ngModel required autofocus pattern="[a-zA-Z0-9]">
+    </div>
+    <div *ngIf="Error1==true">
+        <strong>Warning:</strong> "User Name:" is Invalid.
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">Login</button>
+  
+  </form>
+  
